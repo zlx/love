@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<!--
+__  ___          _                      ____
+\ \/ (_)_ __    | |    _____   _____   |  _ \  __ _ _ __
+ \  /| | '_ \   | |   / _ \ \ / / _ \  | | | |/ _` | '_ \
+ /  \| | | | |  | |__| (_) \ V /  __/  | |_| | (_| | | | |
+/_/\_\_|_| |_|  |_____\___/ \_/ \___|  |____/ \__,_|_| |_|
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Our Love Story</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<style type='text/css'>
+	  #enterButton {
+			width: 150px;
+			border: orange solid 1px;
+			border-color: rgb(0,206,150);
+			height: 40px;
+			position: absolute;
+			text-align: center;
+			vertical-align: middle;
+			border-radius: 20px;
+			-webkit-border-radius: 20px;
+			font-family: Bradley Hand, Andale Monospace, sans-serif;
+			font-size: 14px;
+			text-decoration: none;
+			line-height: 40px;
+			color: rgb(0,206,150);
+			background-color: rgba(255, 255, 255, 0);
+			top: 550px;
+			left: 600px;
+			display: none;
+		}
+	</style>
+  <link href="./default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="../scripts/jquery.js"></script>
+	<script type="text/javascript" src="../scripts/garden.js"></script>
+  <script type="text/javascript" src="../scripts/functions.js"></script>
+</head>
+
+<body>
+	<div id="mainDiv">
+		<div id="content">
+			<div id="code">
+				<span class="comments">/**</span><br />
+				<span class="space"/><span class="comments">* 新新和丹丹认识于游埠高中,</span><br />
+				<span class="space"/><span class="comments">* 他们在那里有一段很快乐的时光.</span><br />
+				<span class="space"/><span class="comments">*/</span><br />
+				i = Boy.<span class="keyword">new</span>(<span class="string">"新新"</span>);<br />
+				u = Girl.<span class="keyword">new</span>(<span class="string">"丹丹"</span>);<br />
+				<span class="comments">// 3 11, 2013 新新对丹丹说，我想照顾你一辈子. </span><br />
+				i.love(u);<br />
+				<span class="comments">// 很幸运，丹丹很羞涩地答应了.</span><br />
+				u.accepted();<br />
+				<span class="comments">// 从此, 他们很恩爱地生活在一起.</span><br />
+				i.miss(u);<br />
+				<span class="comments">// 新新很照顾丹丹，丹丹也很依赖新新.</span><br />
+				i.take_care_of(u);<br />
+        u.rely_on(i);<br />
+				<span class="comments">// 丹丹说不会那么容易嫁给新新，老妈不允许.</span><br />
+				<span class="comments">// 但是新新不放弃，一直坚持.</span><br />
+				is_hesitate = <span class="keyword">true</span>;<br />
+				<span class="keyword">while</span> (is_hesitate) {<br />
+				<span class="placeholder"/>i.wait_for(u);<br />
+				<span class="placeholder"/><span class="comments">// 在这个重要的日子里，是时候了</span><br />
+				<span class="placeholder"/><span class="comments">// 新新大声对丹丹说 "嫁给俺吧".</span><br />
+				<span class="placeholder"/>is_hesitate = u.think_over();<br />
+				}<br />
+				<span class="comments">// 在经过一段告白之后，从此新新与丹丹幸福地生活在一起了.</span><br />
+				i.marry(u);<br />
+				i.live_happily_with(u);<br />
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+						新新丹丹,相爱这么久了
+						<div id="elapseClock"></div>
+					</div>
+					<div id="loveu">
+						恩爱一辈子.<br/>
+						<div class="signature">- 新 & 丹</div>
+					</div>
+				</div>
+			</div>
+      <a href='../index.html' id='enterButton'>ENTER</button>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		together.setFullYear(2012, 12, 23);
+		together.setHours(20);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter(function(){
+				$("#enterButton").show('slow')
+			});
+		}
+	</script>
+</body>
+</html>

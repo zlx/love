@@ -1,0 +1,163 @@
+body {
+  font-family: 'gotham rounded', 'PingFang SC', 'Microsoft YaHei', 微软雅黑, STXihei, 华文细黑, sans-serif;
+}
+
+ul, li {
+  padding: 0px;
+  margin: 0px;
+}
+
+.slide-section {
+  padding: 80px 0;
+  text-align: center;
+  position: relative;
+  outline: none;
+}
+
+.slide-section:nth-child(even) {
+  background-color: white;
+}
+
+.slide-section:nth-child(even) {
+  background-color: rgb(238, 238, 238);
+}
+
+.s-header-container {
+  position: relative;
+  display: block;
+}
+
+.s-header-container .header-spacer {
+  height: 162px;
+}
+
+.header-container {
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+
+#logo {
+  width: 248px;
+  margin: 20px auto;
+}
+
+.titles {
+  margin: 20px auto;
+  font-weight: 400;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.titles .title {
+  margin: 0px 40px;
+  display: inline-block;
+}
+
+.titles a {
+  color: #678;
+  text-decoration: none;
+}
+
+.titles a:hover, titles a:active {
+  color: #859bb1;
+}
+
+#containers {
+  font-family: 'Kaiti SC';
+}
+
+#vows {
+  padding: 0px;
+}
+
+#vows .banner {
+  padding-top: 225px;
+  padding-bottom: 225px;
+  text-align: center;
+  background-image: url('./images/banner.png');
+  background-color: transparent;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+#vows .banner .title {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 60px;
+  border-color: transparent;
+  letter-spacing: 4px;
+  margin: 10px 0px;
+}
+
+#vows .banner .vows {
+  width: 45%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.flag-title {
+  font-family: 'Edwardian Script ITC', 'PingFang SC', 'Microsoft YaHei', 微软雅黑, STXihei, 华文细黑, cursive;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+
+.flag-title h2 {
+  margin: 0;
+  font-size: 36px;
+  max-width: 100%;
+  line-height: 1.2;
+  position: relative;
+  z-index: 1;
+}
+
+.flag-title h2:before, .flag-title h2:after {
+  position: absolute;
+  top: 51%;
+  overflow: hidden;
+  width: 80px;
+  height: 2px;
+  content: '\a0';
+  background-color: black;
+}
+
+.flag-title h2:before {
+  margin-left: -90px;
+  text-align: right;
+}
+
+.flag-title h2:after {
+  margin-left: 10px;
+  text-align: right;
+}
+
+.slide-section .title {
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 15px 0px;
+}
+
+.slide-section .title p {
+  display: inline-block;
+}
+
+#memory .photos {
+  width: 60%;
+  margin: 20px auto;
+}
+
+#memory .photos img {
+  margin: 10px 10px;
+  width: 190px;
+}
+
+#wedding {
+  height: 300px;
+}
+
+#blessings {
+  height: 300px;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!--
+__  ___          _                      ____
+\ \/ (_)_ __    | |    _____   _____   |  _ \  __ _ _ __
+ \  /| | '_ \   | |   / _ \ \ / / _ \  | | | |/ _` | '_ \
+ /  \| | | | |  | |__| (_) \ V /  __/  | |_| | (_| | | | |
+/_/\_\_|_| |_|  |_____\___/ \_/ \___|  |____/ \__,_|_| |_|
+-->
+<head>
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href='./default.css' type='text/css'>
+  <script src="scripts/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+  <!-- Core CSS file -->
+  <link rel="stylesheet" href="photoswipe/photoswipe.css">
+  <link rel="stylesheet" href="photoswipe/default-skin.css">
+  <script src="scripts/photoswipe.min.js"></script>
+  <script src="scripts/photoswipe-ui-default.min.js"></script>
+
+    <script type="text/javascript" src="scripts/default.js"></script>
+</head>
+<body>
+  <div class="s-header-container">
+    <nav class='header-container navbar navbar-default navbar-fixed-top'>
+    <div id="logo">
+      <a href="index.html"><img src='./logo/logo.png'></img></a>
+    </div>
+    <div class="titles">
+      <div class='title'><a href="#vows">誓言</a></div>
+      <div class='title'><a href="#memory">记忆</a></div>
+      <div class='title'><a href="#wedding">婚礼</a></div>
+      <div class='title'><a href="#blessings">祝福</a></div>
+      <div class='title'><a href="story/index.html">故事</a></div>
+    </div>
+    </nav>
+    <div class='header-spacer'></div>
+</div>
+<ul id='containers'>
+  <li id='vows' class="slide-section">
+    <div class="banner">
+      <div class="title">
+        我们要结婚啦！
+      </div>
+      <div class="vows">
+        <p>牧师："祝联新，你愿意迎娶金丹，作为你的妻子，爱她、安慰她、尊重她、保护他，像你爱自己一样。在以后的日子里，不论她贫穷或富有，生病或健康，始终忠诚於她，相亲相爱，直到离开这个世界。Do you?"</span>
+        <p>新新："Yes, I Do!"</p>
+        <p>牧师："金丹，你愿意嫁给祝联新，作为你的丈夫，爱他、安慰他、尊重他、保护他，像你爱自己一样。在以后的日子里，不论他贫穷或富有，生病或健康，始终忠贞於她，相亲相爱，直到离开这个世界。Do you?"</span>
+        <p>丹丹："Yes, I Do"</p>
+      </div>
+    </div>
+  </li>
+  <li id='memory' class="slide-section">
+    <div class="flag-title"><h2>Memory</h2></div>
+    <div class="title"><p>过去的点点滴滴，都是我们珍贵的回忆</p></div>
+    <div class="photos">
+      <div class="photo-row">
+        <img src='images/photos/1.jpg'></img>
+        <img src='images/photos/2.jpg'></img>
+        <img src='images/photos/3.jpg'></img>
+        <img src='images/photos/4.jpg'></img>
+      </div>
+      <div class="photo-row">
+        <img src='images/photos/5.jpg'></img>
+        <img src='images/photos/6.jpg'></img>
+        <img src='images/photos/7.jpg'></img>
+        <img src='images/photos/8.jpg'></img>
+      </div>
+    </div>
+      <!-- Root element of PhotoSwipe. Must have class pswp. -->
+      <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+          <!-- Background of PhotoSwipe.
+               It's a separate element as animating opacity is faster than rgba(). -->
+          <div class="pswp__bg"></div>
+          <!-- Slides wrapper with overflow:hidden. -->
+          <div class="pswp__scroll-wrap">
+              <!-- Container that holds slides.
+                  PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                  Don't modify these 3 pswp__item elements, data is added later on. -->
+              <div class="pswp__container">
+                  <div class="pswp__item"></div>
+                  <div class="pswp__item"></div>
+                  <div class="pswp__item"></div>
+              </div>
+              <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+              <div class="pswp__ui pswp__ui--hidden">
+                  <div class="pswp__top-bar">
+                      <!--  Controls are self-explanatory. Order can be changed. -->
+                      <div class="pswp__counter"></div>
+                      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                      <button class="pswp__button pswp__button--share" title="Share"></button>
+                      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                      <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                      <!-- element will get class pswp__preloader--active when preloader is running -->
+                      <div class="pswp__preloader">
+                          <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                              <div class="pswp__preloader__donut"></div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                      <div class="pswp__share-tooltip"></div>
+                  </div>
+                  <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                  </button>
+                  <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                  </button>
+                  <div class="pswp__caption">
+                      <div class="pswp__caption__center"></div>
+                  </div>
+              </div>
+      </div>
+    </div>
+  </li>
+  <li id='blessings' class="slide-section">
+    <div class="flag-title"><h2>Blessings</h2></div>
+    <div class="title"><p>你们的祝福，是我们最大的幸福</p></div>
+    <div id="disqus_thread"></div>
+    <script>
+    /**
+    * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+
+    s.src = '//love-zlx-jd.disqus.com/embed.js';
+
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  </li>
+</div>
+</footer></footer>
+</body>
