@@ -92,7 +92,8 @@ ul, li {
 }
 
 #vows .banner .vows {
-  width: 45%;
+  width: 80%;
+  max-width: 640px;
   margin: 0 auto;
   text-align: left;
 }
@@ -167,6 +168,7 @@ ul, li {
 }
 
 #disqus_thread {
-  width: 60%;
+  width: 90%;
+  max-width: 860px;
   margin: 0px auto;
 }

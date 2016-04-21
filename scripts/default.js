@@ -44,4 +44,6 @@ jQuery( document ).ready(function( $ ) {
     }
   }, 400);
 
+  $('video').mediaelementplayer();
+
 });
