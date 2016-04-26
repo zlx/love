@@ -7,34 +7,21 @@ jQuery( document ).ready(function( $ ) {
 
   function hasScrolled() {
     var st = $(this).scrollTop();
-    console.log("header-container:" + navbarHeight);
-    console.log("st:" + st);
-    console.log("lastScrollTop:" + lastScrollTop);
 
-    // Make sure they scroll more than delta
-    // if(Math.abs(lastScrollTop - st) <= delta)
-    //     return;
-
-    // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.
     if (st > lastScrollTop && st > navbarHeight){
-        $('.header-container').animate({'margin-top': '-100px'}, 500);
+      $('.header-container').animate({'margin-top': '-100px'}, 500);
     } else if (st < lastScrollTop && st - delta < 100) {
-        // st 120, mt: -100px
-        // st 20, mt: 0px
-        if (st - delta > 0) {
-          $('.header-container').css('margin-top', -(st-delta) + 'px');//, 50);
-        } else {
-          $('.header-container').css('margin-top', '0px');
-        }
+      if (st - delta > 0) {
+        $('.header-container').css('margin-top', -(st-delta) + 'px');//, 50);
+      } else {
+        $('.header-container').css('margin-top', '0px');
+      }
     }
-
     lastScrollTop = st;
   }
 
   $(window).scroll(function(event){
     didScroll = true;
-    // hasScrolled();
   });
 
   window.setInterval(function(){
@@ -44,8 +31,25 @@ jQuery( document ).ready(function( $ ) {
     }
   }, 400);
 
-  window.player = videojs('video-player', {
-    fluid: true
+
+  $(".video-player-button").click(function(e){
+    source = document.createElement('source');
+    $(source).attr('type', 'video/mp4');
+    $(source).attr('src', $(this).data('videosrc'));
+    obj = $('<video />').attr({
+      id: 'video-player',
+      class: 'video-js',
+      controls: '',
+      preload: 'auto',
+      poster: $(this).data('poster')
+    });
+    $('.video-container').append(obj);
+    $(obj).append(source);
+
+    $(this).hide();
+    videojs('video-player', { fluid: true }, function(){
+      this.play();
+    });
   })
 
 });

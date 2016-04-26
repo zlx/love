@@ -9,23 +9,9 @@ __  ___          _                      ____
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <link rel="stylesheet" href='./default.css' type='text/css'>
-  <script src="scripts/jquery.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
-  <!-- Core CSS file -->
-  <link rel="stylesheet" href="photoswipe/photoswipe.css">
-  <link rel="stylesheet" href="photoswipe/default-skin.css">
-  <script src="scripts/photoswipe.min.js"></script>
-  <script src="scripts/photoswipe-ui-default.min.js"></script>
-  <script src="scripts/mediaelement-and-player.min.js"></script>
-  <link rel="stylesheet" href="mediaelement/mediaelementplayer.css" />
-  <link href="http://vjs.zencdn.net/5.9.2/video-js.css" rel="stylesheet">
-  <script src="http://vjs.zencdn.net/5.9.2/video.js"></script>
-  <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
-  <script type="text/javascript" src="scripts/default.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://vjs.zencdn.net/5.9.2/video-js.css">
+  <link rel="stylesheet" href='default.css' type='text/css'>
 </head>
 <body>
   <div class="s-header-container">
@@ -59,14 +45,8 @@ __  ___          _                      ____
     <div class="flag-title"><h2>Memory</h2></div>
     <div class="title"><p>过去的点点滴滴，都是我们珍贵的回忆</p></div>
     <div class='video-container'>
-      <video id='video-player' class="video-js" controls preload="auto"
-    poster="images/poster.png" data-setup="{}">
-      <source src="http://zlx-videos.qiniudn.com/love-site/memory-slide-360.m4v" type='video/mp4'>
-      <p class="vjs-no-js">
-        To view this video please enable JavaScript, and consider upgrading to a web browser that
-        <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-      </p>
-      </video>
+      <img src='images/player.png' class='video-player-button' data-poster='images/poster.png' data-videosrc='http://zlx-videos.qiniudn.com/love-site/memory-slide-360.m4v'></img>
+
     </div>
 
   </li>
@@ -74,18 +54,20 @@ __  ___          _                      ____
     <div class="flag-title"><h2>Blessings</h2></div>
     <div class="title"><p>你的祝福，是我们最大的幸福</p></div>
     <div id="disqus_thread"></div>
-    <script>
-      (function() { // DON'T EDIT BELOW THIS LINE
-      var d = document, s = d.createElement('script');
-
-      s.src = '//love-zlx-jd.disqus.com/embed.js';
-
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-      })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
   </li>
 </div>
 </footer></footer>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://vjs.zencdn.net/5.9.2/video.js"></script>
+<script type="text/javascript" src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+<script type="text/javascript" src="scripts/default.js"></script>
+<script>
+  (function() {
+    var d = document, s = d.createElement('script');
+    s.src = '//love-zlx-jd.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
 </body>
