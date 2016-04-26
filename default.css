@@ -197,10 +197,10 @@ ul, li {
 
 @font-face{
 	font-family: "Edwardian Script ITC";
-	src: url("https://github.com/zlx/love/raw/gh-pages/font/ITCEDSCR.TTF");
+	src: url("font/ITCEDSCR.ttf");
 }
 
 @font-face{
 	font-family: "Kaiti SC";
-	src: url("https://github.com/zlx/love/raw/gh-pages/font/KaiTi.ttf");
+	src: url("font/KaiTi.ttf");
 }
