@@ -44,6 +44,8 @@ jQuery( document ).ready(function( $ ) {
     }
   }, 400);
 
-  $('video').mediaelementplayer();
+  window.player = videojs('video-player', {
+    fluid: true
+  })
 
 });
