@@ -54,6 +54,13 @@ ul, li {
   display: inline-block;
 }
 
+@media (max-width: 400px) {
+  .titles .title {
+    margin: 0px 20px;
+    display: inline-block;
+  }
+}
+
 .titles a {
   color: #678;
   text-decoration: none;
@@ -176,4 +183,14 @@ ul, li {
   width: 90%;
   max-width: 860px;
   margin: 0px auto;
+}
+
+@font-face{
+	font-family: "Edwardian Script ITC";
+	src: url("font/ITCEDSCR.ttf");
+}
+
+@font-face{
+	font-family: "Kaiti SC";
+	src: url("font/KaiTi.ttf");
 }
