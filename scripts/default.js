@@ -32,24 +32,37 @@ jQuery( document ).ready(function( $ ) {
   }, 400);
 
 
+  // $(".video-player-button").click(function(e){
+  //   source = document.createElement('source');
+  //   $(source).attr('type', 'video/mp4');
+  //   $(source).attr('src', $(this).data('videosrc'));
+  //   obj = $('<video />').attr({
+  //     id: 'video-player',
+  //     class: 'video-js',
+  //     controls: '',
+  //     preload: 'auto'
+  //   });
+  //   $(obj).append(source);
+  //   $('.video-container').append(obj);
+  //
+  //   $(this).hide();
+  //   videojs('video-player', { fluid: true }, function(){
+  //     this.load();
+  //   });
+  // })
+
   $(".video-player-button").click(function(e){
     source = document.createElement('source');
     $(source).attr('type', 'video/mp4');
     $(source).attr('src', $(this).data('videosrc'));
     obj = $('<video />').attr({
       id: 'video-player',
-      class: 'video-js',
-      controls: '',
-      preload: 'auto',
-      poster: $(this).data('poster')
+      autoplay: '',
+      controls: ''
     });
-    $('.video-container').append(obj);
     $(obj).append(source);
-
+    $('.video-container').append(obj);
     $(this).hide();
-    videojs('video-player', { fluid: true }, function(){
-      this.play();
-    });
   })
 
 });

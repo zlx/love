@@ -176,7 +176,7 @@ ul, li {
 }
 
 #memory .video-container video {
-  display: none;
+  /*display: none;*/
 }
 
 .video-js {
