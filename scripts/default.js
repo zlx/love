@@ -31,30 +31,18 @@ jQuery( document ).ready(function( $ ) {
     }
   }, 400);
 
-
-  // $(".video-player-button").click(function(e){
-  //   source = document.createElement('source');
-  //   $(source).attr('type', 'video/mp4');
-  //   $(source).attr('src', $(this).data('videosrc'));
-  //   obj = $('<video />').attr({
-  //     id: 'video-player',
-  //     class: 'video-js',
-  //     controls: '',
-  //     preload: 'auto'
-  //   });
-  //   $(obj).append(source);
-  //   $('.video-container').append(obj);
-  //
-  //   $(this).hide();
-  //   videojs('video-player', { fluid: true }, function(){
-  //     this.load();
-  //   });
-  // })
+  if (window.screen.width < 960) {
+    $('.video-player-button').attr('src', 'images/player-320.png')
+  }
 
   $(".video-player-button").click(function(e){
     source = document.createElement('source');
     $(source).attr('type', 'video/mp4');
-    $(source).attr('src', $(this).data('videosrc'));
+    // if (window.screen.width > 960) {
+    //   $(source).attr('src', 'http://zlx-videos.qiniudn.com/love-site/memory-slide.m4v');
+    // } else {
+      $(source).attr('src', 'http://zlx-videos.qiniudn.com/love-site/memory-slide-360.m4v');
+    // }
     obj = $('<video />').attr({
       id: 'video-player',
       autoplay: '',
