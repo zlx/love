@@ -7,6 +7,10 @@ ul, li {
   margin: 0px;
 }
 
+.weixin-share-image {
+  display: none;
+}
+
 .slide-section {
   padding: 80px 0;
   text-align: center;
