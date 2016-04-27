@@ -34,9 +34,9 @@ __  ___          _                      ____
         我们要结婚啦
       </div>
       <div class="vows">
-        <p>牧师："祝联新，你愿意迎娶金丹，作为你的妻子，爱她、安慰她、尊重她、保护他，像你爱自己一样。在以后的日子里，不论她贫穷或富有，生病或健康，始终忠诚於她，相亲相爱，直到离开这个世界。Do you?"</span>
+        <p>牧师："祝联新，你愿意迎娶金丹，作为你的妻子，爱她、安慰她、尊重她、保护她，像你爱自己一样。在以后的日子里，不论她贫穷或富有，生病或健康，始终忠诚於她，相亲相爱，直到离开这个世界。Do you?"</span>
         <p>新新："Yes, I Do!"</p>
-        <p>牧师："金丹，你愿意嫁给祝联新，作为你的丈夫，爱他、安慰他、尊重他、保护他，像你爱自己一样。在以后的日子里，不论他贫穷或富有，生病或健康，始终忠贞於她，相亲相爱，直到离开这个世界。Do you?"</span>
+        <p>牧师："金丹，你愿意嫁给祝联新，作为你的丈夫，爱他、安慰他、尊重他、保护他，像你爱自己一样。在以后的日子里，不论他贫穷或富有，生病或健康，始终忠贞於他，相亲相爱，直到离开这个世界。Do you?"</span>
         <p>丹丹："Yes, I Do"</p>
       </div>
     </div>
@@ -125,53 +125,53 @@ __  ___          _                      ____
   //     location.replace('?' + Math.random(),true);
   // });
   // 需要分享的内容，请放到ready里
-  WeixinApi.ready(function(Api) {
-      // 微信分享的数据
-      var wxData = {
-          "appId": "", // 服务号可以填写appId
-          "imgUrl" : 'http://blog.zlxstar.me/love/images/banner.png',
-          "link" : 'http://blog.zlxstar.me/love',
-          "desc" : '这里，有我们的誓言；这里，有我们的过去；这里，还需要你的祝福',
-          "title" : "我们要结婚啦－希望得到你的祝福！"
-      };
-      // 分享的回调
-      var wxCallbacks = {
-          // 收藏操作是否触发回调，默认是开启的
-          favorite : false,
-          // 分享操作开始之前
-          ready : function() {
-              // 你可以在这里对分享的数据进行重组
-              alert("准备分享");
-          },
-          // 分享被用户自动取消
-          cancel : function(resp) {
-              // 你可以在你的页面上给用户一个小Tip，为什么要取消呢？
-              alert("分享被取消，msg=" + resp.err_msg);
-          },
-          // 分享失败了
-          fail : function(resp) {
-              // 分享失败了，是不是可以告诉用户：不要紧，可能是网络问题，一会儿再试试？
-              alert("分享失败，msg=" + resp.err_msg);
-          },
-          // 分享成功
-          confirm : function(resp) {
-              // 分享成功了，我们是不是可以做一些分享统计呢？
-              alert("分享成功，msg=" + resp.err_msg);
-          },
-          // 整个分享过程结束
-          all : function(resp,shareTo) {
-              // 如果你做的是一个鼓励用户进行分享的产品，在这里是不是可以给用户一些反馈了？
-              alert("分享" + (shareTo ? "到" + shareTo : "") + "结束，msg=" + resp.err_msg);
-          }
-      };
-      // 用户点开右上角popup菜单后，点击分享给好友，会执行下面这个代码
-      Api.shareToFriend(wxData, wxCallbacks);
-      // 点击分享到朋友圈，会执行下面这个代码
-      Api.shareToTimeline(wxData, wxCallbacks);
-      // 点击分享到腾讯微博，会执行下面这个代码
-      Api.shareToWeibo(wxData, wxCallbacks);
-      // iOS上，可以直接调用这个API进行分享，一句话搞定
-      Api.generalShare(wxData,wxCallbacks);
-  });
+  // WeixinApi.ready(function(Api) {
+  //     // 微信分享的数据
+  //     var wxData = {
+  //         "appId": "", // 服务号可以填写appId
+  //         "imgUrl" : 'http://blog.zlxstar.me/love/images/banner.png',
+  //         "link" : 'http://blog.zlxstar.me/love',
+  //         "desc" : '这里，有我们的誓言；这里，有我们的过去；这里，还需要你的祝福',
+  //         "title" : "我们要结婚啦－希望得到你的祝福！"
+  //     };
+  //     // 分享的回调
+  //     var wxCallbacks = {
+  //         // 收藏操作是否触发回调，默认是开启的
+  //         favorite : false,
+  //         // 分享操作开始之前
+  //         ready : function() {
+  //             // 你可以在这里对分享的数据进行重组
+  //             alert("准备分享");
+  //         },
+  //         // 分享被用户自动取消
+  //         cancel : function(resp) {
+  //             // 你可以在你的页面上给用户一个小Tip，为什么要取消呢？
+  //             alert("分享被取消，msg=" + resp.err_msg);
+  //         },
+  //         // 分享失败了
+  //         fail : function(resp) {
+  //             // 分享失败了，是不是可以告诉用户：不要紧，可能是网络问题，一会儿再试试？
+  //             alert("分享失败，msg=" + resp.err_msg);
+  //         },
+  //         // 分享成功
+  //         confirm : function(resp) {
+  //             // 分享成功了，我们是不是可以做一些分享统计呢？
+  //             alert("分享成功，msg=" + resp.err_msg);
+  //         },
+  //         // 整个分享过程结束
+  //         all : function(resp,shareTo) {
+  //             // 如果你做的是一个鼓励用户进行分享的产品，在这里是不是可以给用户一些反馈了？
+  //             alert("分享" + (shareTo ? "到" + shareTo : "") + "结束，msg=" + resp.err_msg);
+  //         }
+  //     };
+  //     // 用户点开右上角popup菜单后，点击分享给好友，会执行下面这个代码
+  //     Api.shareToFriend(wxData, wxCallbacks);
+  //     // 点击分享到朋友圈，会执行下面这个代码
+  //     Api.shareToTimeline(wxData, wxCallbacks);
+  //     // 点击分享到腾讯微博，会执行下面这个代码
+  //     Api.shareToWeibo(wxData, wxCallbacks);
+  //     // iOS上，可以直接调用这个API进行分享，一句话搞定
+  //     Api.generalShare(wxData,wxCallbacks);
+  // });
 </script>
 </body>
