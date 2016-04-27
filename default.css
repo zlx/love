@@ -1,5 +1,5 @@
 body {
-  font-family: 'gotham rounded', 'PingFang SC', 'Microsoft YaHei', 微软雅黑, STXihei, 华文细黑, sans-serif;
+  font-family: 'PingFang SC', 'Microsoft YaHei', 微软雅黑, STXihei, 华文细黑, sans-serif;
 }
 
 ul, li {
@@ -70,10 +70,6 @@ ul, li {
   color: #859bb1;
 }
 
-#containers {
-  font-family: 'Kaiti SC';
-}
-
 #vows {
   padding: 0px;
 }
@@ -90,6 +86,7 @@ ul, li {
 }
 
 #vows .banner .title {
+  font-family: 'HanziPen SC', 'Microsoft JhengHei UI Light', 'Oriya Sangam MN', 'PingFang SC', 'Microsoft YaHei', 微软雅黑, STXihei, 华文细黑, sans-serif;
   font-size: 40px;
   font-weight: 400;
   line-height: 60px;
@@ -99,6 +96,7 @@ ul, li {
 }
 
 #vows .banner .vows {
+  font-family: 'HanziPen SC', 'PingFang SC', 'Microsoft YaHei', 微软雅黑, STXihei, 华文细黑, sans-serif;
   width: 80%;
   max-width: 640px;
   margin: 0 auto;
@@ -106,7 +104,7 @@ ul, li {
 }
 
 .flag-title {
-  font-family: 'Edwardian Script ITC', 'PingFang SC', 'Microsoft YaHei', 微软雅黑, STXihei, 华文细黑, cursive;
+  font-family: 'Edwardian Script ITC', 'Brush Script Std', 'Segoe Script', 'Snell Roundhand', 'PingFang SC', 'Microsoft YaHei', 微软雅黑, STXihei, 华文细黑, sans-serif;
   text-align: center;
   position: relative;
   display: inline-block;
