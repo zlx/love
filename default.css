@@ -176,12 +176,13 @@ ul, li {
 }
 
 #memory .video-container video {
-  /*display: none;*/
-}
-
-.video-js {
+  width: 100%;
   height: auto;
 }
+
+/*.video-js {
+  height: auto;
+}*/
 
 #wedding {
   height: 300px;
