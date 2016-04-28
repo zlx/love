@@ -53,4 +53,30 @@ jQuery( document ).ready(function( $ ) {
     $(this).hide();
   })
 
+  $(".bless-submit").click(function(){
+    var form = new FormData();
+    form.append("author", $("#bless-author").val());
+    form.append("body", $("#bless-body").val());
+
+    var settings = {
+      "async": true,
+      "crossDomain": true,
+      "url": "http://love-site-backend.herokuapp.com/bless",
+      "method": "POST",
+      "processData": false,
+      "contentType": false,
+      "headers": {
+        'Access-Control-Allow-Origin': '*'
+      },
+      "mimeType": "multipart/form-data",
+      "data": form
+    }
+
+    $.ajax(settings).done(function (response) {
+      $("#bless-author").val('');
+      $("#bless-body").val('');
+      alert("感谢你的祝福！");
+    });
+  })
+
 });

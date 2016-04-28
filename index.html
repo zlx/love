@@ -53,19 +53,23 @@ __  ___          _                      ____
   <li id='blessings' class="slide-section">
     <div class="flag-title"><h2>Blessings</h2></div>
     <div class="title"><p>你的祝福，是我们最大的幸福</p></div>
-    <div id="disqus_thread"></div>
+    <div class='bless-form'>
+      <form class="form-horizontal">
+        <div class="form-group">
+          <input type="text" class="form-control" id="bless-author" placeholder="告诉我们你的名字！">
+        </div>
+        <div class="form-group">
+          <textarea rows='3' class="form-control" id="bless-body"></textarea>
+        </div>
+        <div class="form-group">
+          <button type="button" class="btn btn-default bless-submit">祝福你们</button>
+        </div>
+      </form>
+    </div>
   </li>
 </div>
 </footer></footer>
 <script type="text/javascript" src="scripts/jquery.js"></script>
 <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
 <script type="text/javascript" src="scripts/default.js"></script>
-<script>
-  (function() {
-    var d = document, s = d.createElement('script');
-    s.src = '//love-zlx-jd.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-  })();
-</script>
 </body>

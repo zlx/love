@@ -192,7 +192,7 @@ ul, li {
   height: 300px;
 }
 
-#disqus_thread {
+.bless-form {
   width: 90%;
   max-width: 860px;
   margin: 0px auto;
