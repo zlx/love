@@ -31,8 +31,8 @@ jQuery( document ).ready(function( $ ) {
     }
   }, 400);
 
-  if (window.screen.width < 960) {
-    $('.video-player-button').attr('src', 'images/player-320.png')
+  if (window.screen.width > 320) {
+    $('.video-player-button').attr('src', 'images/player.png')
   }
 
   $(".video-player-button").click(function(e){
