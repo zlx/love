@@ -79,4 +79,12 @@ jQuery( document ).ready(function( $ ) {
     });
   })
 
+  $(".wedding-slick").slick({
+    // centerMode: true,
+    arrows: false,
+    // centerPadding: '60px',
+    slidesToShow: 1,
+    dots: true
+  });
+
 });

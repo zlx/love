@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <!--
 __  ___          _                      ____
 \ \/ (_)_ __    | |    _____   _____   |  _ \  __ _ _ __
@@ -8,70 +9,116 @@ __  ___          _                      ____
 -->
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>我们要结婚啦!</title>
   <meta name="description" content="这里，有我们的誓言；这里，有我们的过去；这里，还需要你的祝福">
-  <title>我们要结婚啦－希望得到你的祝福！</title>
   <link rel="stylesheet" href="bootstrap.min.css">
-  <link rel="stylesheet" href='default.css' type='text/css'>
-  <link rel="shortcut icon" href="logo/logo.png">
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+  <link rel="stylesheet" href="love.css">
+  <link rel="shortcut icon" href="logo/shortcut.png">
 </head>
-<body>
-  <div class='weixin-share-image'><img src='images/weixin-share.jpg'></img></div>
-  <div class="s-header-container">
-    <nav class='header-container navbar navbar-default navbar-fixed-top'>
-    <div id="logo">
-      <a href="index.html"><img src='./logo/logo.png'></img></a>
-    </div>
-    <div class="titles">
-      <div class='title'><a href="#vows">誓言</a></div>
-      <div class='title'><a href="#memory">记忆</a></div>
-      <div class='title'><a href="#blessings">祝福</a></div>
+<body data-spy="scroll" data-target="#header">
+  <div id='header'>
+    <nav class="navbar navbar-top navbar-light">
+      <div class="container">
+      <a class="navbar-brand" href="index.html"><img src='./logo/logo.png'></img></a>
+      <ul class="nav navbar-nav pull-xs-right menu">
+        <li class="nav-item">
+          <a class="nav-link" href="#vows">誓言</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#weddingphotos">婚纱照</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#memory">记忆</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#blessings">祝福</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./story/index.html">故事</a>
+        </li>
+      </ul>
     </div>
     </nav>
-    <div class='header-spacer'></div>
-</div>
-<ul id='containers'>
-  <li id='vows' class="slide-section">
-    <div class="banner">
-      <div class="title">
-        我们要结婚啦
-      </div>
-      <div class="vows">
-        <p>牧师："祝联新，你愿意迎娶金丹，作为你的妻子，爱她、安慰她、尊重她、保护她，像你爱自己一样。在以后的日子里，不论她贫穷或富有，生病或健康，始终忠诚於她，相亲相爱，直到离开这个世界。Do you?"</span>
-        <p>新新："Yes, I Do!"</p>
-        <p>牧师："金丹，你愿意嫁给祝联新，作为你的丈夫，爱他、安慰他、尊重他、保护他，像你爱自己一样。在以后的日子里，不论他贫穷或富有，生病或健康，始终忠贞於他，相亲相爱，直到离开这个世界。Do you?"</span>
-        <p>丹丹："Yes, I Do"</p>
-      </div>
-    </div>
-  </li>
-  <li id='memory' class="slide-section">
-    <div class="flag-title"><h2>Memory</h2></div>
-    <div class="title"><p>过去的点点滴滴，都是我们珍贵的回忆</p></div>
-    <div class='video-container'>
-      <img src='images/player-320.png' class='video-player-button'></img>
-    </div>
+  </div>
+  <div class="container-fluid">
+    <ul id='containers'>
+      <li id='vows' class="slide-section">
+        <div class="banner">
+          <div class="title">
+            我们要结婚啦
+          </div>
+          <div class="vows">
+            <p>牧师："祝联新，你愿意迎娶金丹，作为你的妻子，爱她、安慰她、尊重她、保护她，像你爱自己一样。在以后的日子里，不论她贫穷或富有，生病或健康，始终忠诚於她，相亲相爱，直到离开这个世界。Do you?"</span>
+            <p>新新："Yes, I Do!"</p>
+            <p>牧师："金丹，你愿意嫁给祝联新，作为你的丈夫，爱他、安慰他、尊重他、保护他，像你爱自己一样。在以后的日子里，不论他贫穷或富有，生病或健康，始终忠贞於他，相亲相爱，直到离开这个世界。Do you?"</span>
+            <p>丹丹："Yes, I Do"</p>
+          </div>
+        </div>
+      </li>
+      <li id='weddingphotos' class="slide-section">
+        <div class="flag-title"><h2>Moment</h2></div>
+        <div class="title"><p>美丽瞬间，值得一生去珍藏</p></div>
+        <div class='wedding-slick'>
+          <div><img src='images/wedding/0.jpg' class='img-responsive center-block'></img></div>
+          <div><img src='images/wedding/1.jpg' class='img-responsive center-block'></img></div>
+          <div><img src='images/wedding/2.jpg' class='img-responsive center-block'></img></div>
+          <div><img src='images/wedding/3.jpg' class='img-responsive center-block'></img></div>
+          <div><img src='images/wedding/4.jpg' class='img-responsive center-block'></img></div>
+          <div><img src='images/wedding/35.jpg' class='img-responsive center-block'></img></div>
+          <div><img src='images/wedding/40.jpg' class='img-responsive center-block'></img></div>
+          <div><img src='images/wedding/51.jpg' class='img-responsive center-block'></img></div>
+          <div><img src='images/wedding/52.jpg' class='img-responsive center-block'></img></div>
+          <div><img src='images/wedding/53.jpg' class='img-responsive center-block'></img></div>
+          <div><img src='images/wedding/64.jpg' class='img-responsive center-block'></img></div>
+          <div><img src='images/wedding/71.jpg' class='img-responsive center-block'></img></div>
+          <div><img src='images/wedding/72.jpg' class='img-responsive center-block'></img></div>
+        </div>
+      </li>
+      <li id='memory' class="slide-section">
+        <div class="flag-title"><h2>Memory</h2></div>
+        <div class="title"><p>过去的点点滴滴，都是我们珍贵的回忆</p></div>
+        <div class='video-container'>
+          <img src='images/player-320.png' class='video-player-button'></img>
+        </div>
+      </li>
+      <li id='wedding' class="slide-section">
+        <div class="flag-title"><h2>Wedding</h2></div>
+        <div class="title"><p>正在紧张准备中</p></div>
+      </li>
+      <li id='blessings' class="slide-section">
+        <div class="flag-title"><h2>Blessings</h2></div>
+        <div class="title"><p>你的祝福，是我们最大的幸福</p></div>
+        <div class='bless-form'>
+      	<div class="ds-thread" data-thread-key="love1314" data-title="祝福" data-url="http://blog.zlxstar.me/love/"></div>
+        <script type="text/javascript">
+        var duoshuoQuery = {short_name:"zlx-love-jd"};
+        	(function() {
+        		var ds = document.createElement('script');
+        		ds.type = 'text/javascript';ds.async = true;
+        		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        		ds.charset = 'UTF-8';
+        		(document.getElementsByTagName('head')[0]
+        		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+        	})();
+        </script>
+        </div>
+      </li>
+    </ul>
+  </div>
 
-  </li>
-  <li id='blessings' class="slide-section">
-    <div class="flag-title"><h2>Blessings</h2></div>
-    <div class="title"><p>你的祝福，是我们最大的幸福</p></div>
-    <div class='bless-form'>
-  	<div class="ds-thread" data-thread-key="love1314" data-title="祝福" data-url="http://blog.zlxstar.me/love/"></div>
-    <script type="text/javascript">
-    var duoshuoQuery = {short_name:"zlx-love-jd"};
-    	(function() {
-    		var ds = document.createElement('script');
-    		ds.type = 'text/javascript';ds.async = true;
-    		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-    		ds.charset = 'UTF-8';
-    		(document.getElementsByTagName('head')[0]
-    		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-    	})();
-    </script>
-    </div>
-  </li>
-</ul>
-<script type="text/javascript" src="scripts/jquery.js"></script>
-<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
-<script type="text/javascript" src="scripts/default.js"></script>
+  <footer>
+    <nav class="navbar navbar-bottom navbar-dark bg-inverse">
+      <p>© 2016 北极科技 版权所有</p>
+    </nav>
+  </footer>
+  <script type="text/javascript" src="scripts/jquery.min.js"></script>
+  <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+  <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+  <script type="text/javascript" src="scripts/default.js"></script>
 </body>
+</html>
