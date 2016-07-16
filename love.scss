@@ -221,8 +221,9 @@ ul, li {
       margin-right: 20px;
 
       img {
-        width: 100%;
-        height: auto;
+        max-height: 600px;
+        max-width: 100%;
+        width: auto;
       }
     }
 
@@ -244,5 +245,9 @@ ul, li {
 @media screen and (max-width: 480px) {
   .wedding-slick {
     width: 100% !important;
+
+    .img-horizontal {
+      padding: 50% 0;
+    }
   }
 }

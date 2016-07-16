@@ -173,8 +173,9 @@ ul, li {
   #weddingphotos .wedding-slick .slick-slide {
     margin-right: 20px; }
     #weddingphotos .wedding-slick .slick-slide img {
-      width: 100%;
-      height: auto; }
+      max-height: 600px;
+      max-width: 100%;
+      width: auto; }
   #weddingphotos .wedding-slick .slick-dots {
     bottom: -45px; }
 
@@ -185,6 +186,8 @@ ul, li {
 
 @media screen and (max-width: 480px) {
   .wedding-slick {
-    width: 100% !important; } }
+    width: 100% !important; }
+    .wedding-slick .img-horizontal {
+      padding: 50% 0; } }
 
 /*# sourceMappingURL=love.css.map */
