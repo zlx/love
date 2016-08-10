@@ -179,6 +179,21 @@ ul, li {
   #weddingphotos .wedding-slick .slick-dots {
     bottom: -45px; }
 
+#wedding .title {
+  font-size: 24px;
+  font-family: monospace; }
+#wedding #wedding-map {
+  width: 100%;
+  min-height: 600px;
+  overflow: hidden; }
+
+#r-result {
+  width: 20%;
+  min-width: 300px;
+  position: absolute;
+  z-index: 1000;
+  padding-left: 60px; }
+
 .bless-form {
   width: 90%;
   max-width: 860px;
@@ -188,6 +203,11 @@ ul, li {
   .wedding-slick {
     width: 100% !important; }
     .wedding-slick .img-horizontal {
-      padding: 50% 0; } }
+      padding: 50% 0; }
+
+  #r-result {
+    position: relative;
+    width: 100%;
+    padding-left: 0px; } }
 
 /*# sourceMappingURL=love.css.map */

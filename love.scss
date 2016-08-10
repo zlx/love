@@ -233,6 +233,27 @@ ul, li {
   }
 }
 
+#wedding {
+  .title {
+    font-size: 24px;
+    font-family: monospace;
+  }
+
+  #wedding-map {
+    width: 100%;
+    min-height: 600px;
+    overflow: hidden;
+  }
+}
+
+#r-result {
+  width: 20%;
+  min-width: 300px;
+  position: absolute;
+  z-index: 1000;
+  padding-left: 60px;
+}
+
 #blessings {
 }
 
@@ -249,5 +270,11 @@ ul, li {
     .img-horizontal {
       padding: 50% 0;
     }
+  }
+
+  #r-result {
+    position: relative;
+    width: 100%;
+    padding-left: 0px;
   }
 }

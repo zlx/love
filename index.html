@@ -32,13 +32,10 @@ __  ___          _                      ____
           <a class="nav-link" href="#weddingphotos">婚纱照</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#memory">记忆</a>
+          <a class="nav-link" href="#weddingphotos">结婚</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#blessings">祝福</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./story/index.html">故事</a>
         </li>
       </ul>
     </div>
@@ -78,16 +75,38 @@ __  ___          _                      ____
           <div><img src='images/wedding/72.jpg' class='img-responsive center-block img-horizontal'></img></div>
         </div>
       </li>
-      <li id='memory' class="slide-section">
-        <div class="flag-title"><h2>Memory</h2></div>
-        <div class="title"><p>过去的点点滴滴，都是我们珍贵的回忆</p></div>
-        <div class='video-container'>
-          <img src='images/player-320.png' class='video-player-button'></img>
-        </div>
-      </li>
       <li id='wedding' class="slide-section">
         <div class="flag-title"><h2>Wedding</h2></div>
-        <div class="title"><p>正在紧张准备中</p></div>
+        <div class="title"><p>2016年10月06日 11:00</p></div>
+        <div id="r-result"></div>
+        <div id="wedding-map"></div>
+        <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=FeKwpY7ti8nkxFgQciB2KkVoy9spCsek"></script>
+        <script type="text/javascript">
+        // 百度地图API功能
+      	var map = new BMap.Map("wedding-map");
+      	map.centerAndZoom(new BMap.Point(119.362488,29.232216), 14);
+
+      	 var transit = new BMap.DrivingRoute(map, {
+      		renderOptions: {
+      			map: map,
+      			panel: "r-result",
+      			enableDragging : true //起终点可进行拖拽
+      		},
+      	});
+        var top_left_control = new BMap.ScaleControl({anchor: BMAP_ANCHOR_TOP_LEFT});// 左上角，添加比例尺
+      	var top_left_navigation = new BMap.NavigationControl();  //左上角，添加默认缩放平移控件
+      	var top_right_navigation = new BMap.NavigationControl({anchor: BMAP_ANCHOR_TOP_RIGHT, type: BMAP_NAVIGATION_CONTROL_SMALL}); //右上角
+
+        map.addControl(top_left_control);
+    		map.addControl(top_left_navigation);
+    		map.addControl(top_right_navigation);
+        var target = new BMap.Point(119.294976,29.215669)
+        var marker = new BMap.Marker(target);  // 创建标注
+      	var label = new BMap.Label("10月06日，祝联新&金丹",{offset: new BMap.Size(20,-20)});
+      	marker.setLabel(label);
+        map.addOverlay(marker);               // 将标注添加到地图中
+      	transit.search("兰溪市汽车西站", "兰溪市毛塘下");
+        </script>
       </li>
       <li id='blessings' class="slide-section">
         <div class="flag-title"><h2>Blessings</h2></div>
@@ -117,8 +136,6 @@ __  ___          _                      ____
   </footer>
   <script type="text/javascript" src="http://cdn.staticfile.org/jquery/2.2.1/jquery.min.js"></script>
   <script src='http://cdn.staticfile.org/tether-tooltip/1.1.0/js/tooltip.min.js'></script>
-  <!-- <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script> -->
-  <!-- <script type="text/javascript" src="scripts/bootstrap.min.js"></script> -->
   <script type="text/javascript" src="http://cdn.staticfile.org/slick-carousel/1.5.9/slick.min.js"></script>
   <script type="text/javascript" src="scripts/default.js"></script>
 </body>
